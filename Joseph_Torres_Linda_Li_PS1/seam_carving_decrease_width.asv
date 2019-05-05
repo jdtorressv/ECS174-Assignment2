@@ -1,0 +1,5 @@
+load inputSeam.mat; 
+energyMap = energy_img(inputSeam); 
+for i = 1:100
+    [inputSeam, energyMap] = decrease_width(inputSeam, energyMap);
+end    
